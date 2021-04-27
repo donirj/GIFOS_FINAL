@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>CREAR GIFOS</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="barra lightbars">
+            </div>
+            
+            <div class="row">
+                <div class="logo1"> 
+                    <a href="index.html"><img class="logo1"  src="assets/scripts/logo-mobile.svg" alt="logo1"></a>
+                </div>
+                <div class="hamIcon" onclick="toggleClass()">
+                    <img src="" alt="">
+                    <div id="burger" class="burger-off"></div>
+
+                </div> 
+                <ul class="mainMenu">
+                    <li class="dark colordetexto" id="element1" onClick="javascript:changeText(1)" href="#">Modo Nocturno</li>
+                    <div class="menubar"></div>
+                    <li class="li1"><a id="idfav" class="nav2 colordetexto" href="favoritos.html">Favoritos</a></li>
+                    <div class="menubar"></div>
+                    <li class="li1"><a id="idmisgifos" class="nav2 colordetexto" href="MIS GIFOS.html">Mis GIFOS</a></li>
+                    <div class="menubar"></div>
+                    <a href="CrearGifos.html"><img onmouseover="NuevaImagen()" onmouseout="ViejaImagen()" class="btncrear" id="botoncrearhover"  src="./assets/scripts/button-crear-gifo.svg" alt=""></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section class="creaGIFOS">
+        <div class="video" id="video">
+            <div class="camara" ><img src="/assets/scripts/camara.svg" alt=""></div>
+            <div class="luz"><img src="/assets/scripts/element-luz-camara.svg" alt=""></div>
+            
+            <div class="videobox"></div>
+            <video id="videocamara" class="videocamara" src=""></video> 
+
+                <div class="acceso3 colordetexto" id="acceso3">
+                    <div><p id="demo" class="parrafo1 colordetexto">Aquí podrás crear tus propios GIFOS<br>
+                            <p id="demo" class="parrafo2 colordetexto">¡Crea tu GIFO en sólo 3 pasos! <br> (sólo necesitas una cámara para grabar un video)</p>
+                        </p></div>
+                        
+                </div>
+   
+            <div class="pelicula"><img class="pelicula" src="/assets/scripts/pelicula.svg" alt=""></div>
+          
+        </div>
+    
+        <div class="start">
+            <button onclick="show_hide()" class="dot1" id="dot1"><p class="uno colordetexto">1</p></button>
+            <span class="dot2"><p class="uno colordetexto">2</p></span>
+            <span class="dot3"><p class="uno colordetexto">3</p></span>
+
+        </div>
+     
+        <div class="start4">
+            <div class="barstart"></div>
+            <button  class="btnstart" id="btnstart" onclick="myFunction()">
+                <p class="comenzar">Comenzar</p>
+            </button>
+        </div>
+
+
+    </section>
+
+   
+    
+    <section class=" lighttrending">
+    </section>
+     
+    <footer class="footer">
+        <div class="foot ">
+                <p class="compartir ">Compartir en:</p>
+            <div class="icon2">
+                <a href="https://es-la.facebook.com/" target="_blank" class="fb colordetexto" id="icon"><i class="fa fa-facebook" ></i></a>
+        
+                <a href="https://twitter.com/?lang=es" target="_blank" class="tw colordetexto" id="icon"><i class="fa fa-twitter "></i></a>
+            
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="ig colordetexto" id="icon"><i class="fa fa-instagram"></i></a>
+                
+            </div>
+                <p class="copyright">© GIFOS 2020 All Rights Reserved</p>
+        </div>
+
+    </footer>
+    <div class="barra lightbars">
+    </div>
+
+
+    
+
+    <script>
+        function setNewImage()
+        {
+          document.getElementById("heart").src="./assets/scripts/icon-fav-hover.svg";
+        }
+        function setOldImage()
+        {
+          document.getElementById("heart").src="./assets/scripts/icon-fav.svg";
+        }
+
+        function setNewImage1()
+        {
+        document.getElementById("download1").src="/assets/scripts/icon-download-hover.svg";
+        }
+        function setOldImage1()
+        {
+        document.getElementById("download1").src="/assets/scripts/icon-download.svg";
+        }
+
+            function setNewImage2()
+        {
+        document.getElementById("exp1").src="/assets/scripts/icon-max-hover.svg";
+        }
+        function setOldImage2()
+        {
+        document.getElementById("exp1").src="/assets/scripts/icon-max-normal.svg";
+        }
+
+        function NuevaImagen()
+        {
+          document.getElementById("botoncrearhover").src="./assets/scripts/CTA-crear-gifo-hover.svg";
+        }
+        function ViejaImagen()
+        {
+          document.getElementById("botoncrearhover").src="./assets/scripts/button-crear-gifo.svg";
+        }
+      
+     </script>
+
+<script src="/assets/scripts/services/trending.js"></script>
+<script src="/assets/scripts/services/index.js"></script>
+
+
+</body>
+</html>

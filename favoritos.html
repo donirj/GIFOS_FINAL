@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Favoritos</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="barra lightbars">
+            </div>
+
+            <div class="row">
+                <div class="logo1"> 
+                    <a href="index.html"><img class="logo1" src="assets/scripts/logo-mobile.svg" alt="logo1"></a>
+                </div>
+                <div class="hamIcon" onclick="toggleClass()">
+                    <img src="" alt="">
+                    <div id="burger" class="burger-off"></div>
+
+                </div> 
+                <ul class="mainMenu">
+                    <li class="dark colordetexto" id="element1" onClick="javascript:changeText(1)" href="#">Modo Nocturno</li>
+                    <div class="menubar"></div>
+                    <li class="li1"><a id="idfav" class="nav2 colordetexto" href="favoritos.html">Favoritos</a></li>
+                    <div class="menubar"></div>
+                    <li class="li1"><a id="idmisgifos" class="nav2 colordetexto" href="MIS GIFOS.html">Mis GIFOS</a></li>
+                    <div class="menubar"></div>
+                    <a href="CrearGifos.html" ><img onmouseover="NuevaImagen()" onmouseout="ViejaImagen()" class="btncrear"  id="botoncrearhover"  src="./assets/scripts/button-crear-gifo.svg" alt=""></a>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="boxfav1">
+        <img class="corazon1" src="assets/scripts/icon-favoritos.svg" alt="">
+        <div class="textfav1">
+            <p class="textfav2 colordetexto">Favoritos</p>
+        </div>
+    </div>
+    
+    <section class="favorits">
+
+
+    </section>
+
+    <section class="trendingGIFOS lighttrending">
+        <div>
+            <p class="trend1 colordetexto">Trending GIFOS</p>
+        </div>
+        <div>
+            <p class="trend2 ">Mira los últimos GIFOS de nuestra comunidad</p>
+        </div>
+
+        <div class="trending"  id="trending">
+
+        </div>
+
+    </section>
+    
+    <footer class="footer">
+        <div class="foot "> 
+                <p class="compartir ">Compartir en:</p>
+            <div class="icon2">
+                <a href="https://es-la.facebook.com/" target="_blank" class="fb colordetexto" id="icon"><i class="fa fa-facebook" ></i></a>
+        
+                <a href="https://twitter.com/?lang=es" target="_blank" class="tw colordetexto" id="icon"><i class="fa fa-twitter "></i></a>
+            
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="ig colordetexto" id="icon"><i class="fa fa-instagram"></i></a>
+                
+            </div>
+                <p class="copyright">© GIFOS 2020 All Rights Reserved</p>
+        </div>
+
+    </footer>
+    <div class="barra lightbars">
+    </div>
+    <script src="/assets/scripts/services/app.js"></script>
+
+    <script>
+        function setNewImage()
+        {
+          document.getElementById("heart").src="./assets/scripts/icon-fav-hover.svg";
+        }
+        function setOldImage()
+        {
+          document.getElementById("heart").src="./assets/scripts/icon-fav.svg";
+        }
+
+        function setNewImage1()
+        {
+        document.getElementById("download1").src="/assets/scripts/icon-download-hover.svg";
+        }
+        function setOldImage1()
+        {
+        document.getElementById("download1").src="/assets/scripts/icon-download.svg";
+        }
+
+            function setNewImage2()
+        {
+        document.getElementById("exp1").src="/assets/scripts/icon-max-hover.svg";
+        }
+        function setOldImage2()
+        {
+        document.getElementById("exp1").src="/assets/scripts/icon-max-normal.svg";
+        }
+
+        function NuevaImagen()
+        {
+          document.getElementById("botoncrearhover").src="./assets/scripts/CTA-crear-gifo-hover.svg";
+        }
+        function ViejaImagen()
+        {
+          document.getElementById("botoncrearhover").src="./assets/scripts/button-crear-gifo.svg";
+        }
+      
+     </script>
+
+<script src="/assets/scripts/services/trending.js"></script>
+<script src="/assets/scripts/services/index.js"></script>
+
+
+</body>
+</html>
